@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>انتخاب کالا با دراپ‌دان و تعداد</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shopping Cart</title>
 </head>
 <body>
-  <h1>انتخاب کالا و تعداد</h1>
-  <div class="product-selection">
-    <label for="productDropdown">انتخاب کالا:</label>
-    <select id="productDropdown">
-      <option value="" disabled selected>کالاها را انتخاب کنید</option>
-      <option value="کالای ۱">کالای ۱</option>
-      <option value="کالای ۲">کالای ۲</option>
-      <option value="کالای ۳">کالای ۳</option>
-      <!-- اضافه کردن کالاهای دیگر -->
-    </select>
-    
-    <label for="quantity">تعداد:</label>
-    <input type="number" id="quantity" min="1" value="1">
-    
-    <button id="addToCartBtn">اضافه کردن به سبد خرید</button>
-  </div>
-
-  <div id="cart">
-    <h2>سبد خرید</h2>
-    <ul id="cartItems">
-      <!-- موارد سبد خرید در اینجا قرار می‌گیرند -->
+  <h1>سبد خرید</h1>
+  <div class="dropdown">
+    <button class="dropdown-btn">انتخاب محصول</button>
+    <ul class="dropdown-list">
+      <li data-product="محصول 1">محصول 1</li>
+      <li data-product="محصول 2">محصول 2</li>
+      <li data-product="محصول 3">محصول 3</li>
     </ul>
   </div>
-
+  <div class="cart">
+    <h2>آیتم‌های سبد خرید</h2>
+    <ul class="cart-items">
+    </ul>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
